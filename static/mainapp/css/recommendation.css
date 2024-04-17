@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 * {
     outline: none;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 .heading {
     font-family: "Lobster", cursive;
     font-size: 300%;
-    background-color: #d7722c;
+    background-color: #d7722c; /* Dark pink */
     margin-top: 0px;
     color: white;
 }
@@ -23,7 +23,7 @@
     padding: 25px;
     width: 33.33%;
     height: 250px;
-    background-color: #133050;
+    background-color: #133050; /* Dark blue */
 }
 
 .book-photo {
@@ -79,8 +79,8 @@
 .book-see {
     margin-top: 10px;
     text-align: center;
-    background-color: #fff;
-    color: #d7722c;
+    background-color: #fff; /* Light yellow */
+    color: #d7722c; /* Dark pink */
     font-weight: 600;
     padding: 8px;
     font-size: 14px;
@@ -135,7 +135,7 @@
 
 .more-details {
     text-align: center;
-    background-color: #3d348b;
+    background-color: #3d348b; /* Dark blue */
     color: #fff;
     font-weight: 600;
     font-size: 15px;
@@ -148,15 +148,15 @@
 }
 
 .more-details:hover {
-    color: #3d348b;
+    color: #3d348b; /* Dark blue */
     background: white;
-    border: 2px solid #3d348b;
+    border: 2px solid #3d348b; /* Dark blue */
     text-shadow: 1px 1px 3px #727ff0;
 }
 
 .rating-block {
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #31c2cf; /* Light blue */
     font-weight: 600;
     font-size: 15px;
     border-radius: 20px;

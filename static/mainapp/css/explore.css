@@ -11,12 +11,12 @@
 
 .data:hover+.hide {
     display: block;
-    color: red;
+    color: darkpink; /* Dark pink */
 }
 
 .hide:hover {
     display: block;
-    color: red;
+    color: darkpink; /* Dark pink */
 }
 
 .cover-img-size {
@@ -33,7 +33,7 @@
 
 .title {
     font-family: "Sora", sans-serif;
-    color: #d7722c;
+    color: #4169e1; /* Blue */
 }
 
 .author {
@@ -99,7 +99,7 @@
 .card-title {
     font-family: "Sora", sans-serif;
     font-size: large;
-    color: #d7722c;
+    color: #4169e1; /* Blue */
 }
 
 .card::before,
@@ -132,8 +132,8 @@
 
 .more-details {
     text-align: center;
-    background-color: #3d348b;
-    color: #fff;
+    background-color: #ffd700; /* Yellow */
+    color: darkpink; /* Dark pink */
     font-weight: 600;
     font-size: 11px;
     border-radius: 20px;
@@ -143,16 +143,16 @@
 }
 
 .more-details:hover {
-    color: #3d348b;
-    background: white;
-    border: 2px solid #3d348b;
-    text-shadow: 1px 1px 3px #727ff0;
+    color: #ffd700; /* Yellow */
+    background: darkpink; /* Dark pink */
+    border: 2px solid #ffd700; /* Yellow */
+    text-shadow: 1px 1px 3px #dda0dd; /* Dark pink */
 }
 
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #4169e1; /* Blue */
     font-weight: 600;
     font-size: 11px;
     border-radius: 20px;

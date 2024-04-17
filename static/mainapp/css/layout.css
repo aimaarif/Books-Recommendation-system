@@ -1,6 +1,8 @@
+/*---------------------------------------- preloader ----------------------------------*/
+
 html,
 body {
-    background-color: #ffdab9;
+    background-color: rgb(255, 255, 255); /* Blue */
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -20,11 +22,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #FE7D6A;
+    background-color: #ffd700; /* Yellow */
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #f86751;
+    background-color: #f86751; /* Dark pink */
 }
 
 
@@ -73,8 +75,8 @@ body {
 }
 
 .dropdown-item:hover {
-    text-shadow: 2px 2px 5px #d7722c;
-    background-color: peachpuff;
+    text-shadow: 2px 2px 5px #ffd700; /* Yellow */
+    background-color: peachpuff; /* Light orange */
 }
 
 
@@ -136,7 +138,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding: 1rem 1rem;
-    background-color: #ffc107;
+    background-color: #ffc107; /* Yellow */
 }
 
 .modal .modal-title {
@@ -165,7 +167,7 @@ body {
 #save-book-button {
     display: inline-block;
     text-align: center;
-    background-color: #ffc107;
+    background-color: #ffc107; /* Yellow */
     font-weight: 600;
     font-size: 11px;
     border-radius: 20px;
@@ -190,7 +192,7 @@ strong {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(39, 126, 255);
     color: white;
     margin-top: 10%;
     text-align: center;
@@ -204,7 +206,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #fa944b;
+    color: #4b57fa;
     text-decoration: none;
 }
 
@@ -300,7 +302,7 @@ body {
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
     #topBtn:hover {
         background-color: #ff6666;
     }

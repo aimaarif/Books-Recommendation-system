@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #FFDAB9;
+    background-color: #ffffff; /* Yellow */
     z-index: 99;
 }
 
@@ -135,11 +135,12 @@
 .heading-genre {
     padding: 30px 30px;
     font-size: 47px;
+    color: #4169e1; /* Blue */
 }
 
 .genre-container,
 .top-books {
-    background-color: #153450;
+    background-color: #1a84fd; 
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -172,7 +173,7 @@ ol.carousel-indicators li {
     height: 7px;
     border: none;
     border-radius: 10px;
-    background-color: #dc3545;
+    background-color: #ffd700; /* Yellow */
     opacity: 0.6;
     margin: 0 5px;
 }
@@ -200,7 +201,7 @@ ol.carousel-indicators li.active {
     height: 50px;
     top: 50%;
     border-radius: 50%;
-    background-color: #dc3545;
+    background-color: #ffd700; /* Yellow */
 }
 
 @media screen and (min-width: 992px) {
@@ -243,7 +244,7 @@ ol.carousel-indicators li.active {
 .card-title {
     font-family: "Sora", sans-serif;
     font-size: x-large;
-    color: #d7722c;
+    color: #ffd700; /* Yellow */
 }
 
 .card-img:hover {
@@ -296,7 +297,7 @@ ol.carousel-indicators li.active {
 
 .more-details {
     text-align: center;
-    background-color: #3d348b;
+    background-color: #3d348b; /* Dark pink */
     color: #fff;
     font-weight: 600;
     font-size: 14px;
@@ -307,22 +308,22 @@ ol.carousel-indicators li.active {
 }
 
 .more-details:hover {
-    color: #3d348b;
+    color: #3d348b; /* Dark pink */
     background: white;
-    border: 2px solid#3d348b;
+    border: 2px solid #3d348b; /* Dark pink */
     text-shadow: 1px 1px 3px #727ff0;
 }
 
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #31c2cf; /* Light blue */
     font-weight: 600;
     font-size: 14px;
     border-radius: 20px;
     position: absolute;
     bottom: 10px;
-    right: 35%;
+    right: 35%; /* Adjusted */
     padding: 6px 12px;
 }
 
@@ -400,4 +401,8 @@ ol.carousel-indicators li.active {
         margin-top: 0rem;
         margin-bottom: 0rem;
     }
+}
+.Extras{
+    background-color: #1a84fd;
+    padding-top: 2em;
 }

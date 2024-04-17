@@ -9,13 +9,13 @@
     text-align: center;
 }
 
-fa-google {
+.fa-google {
     padding-right: 5px;
 }
 
 .googlebutton {
     position: relative;
-    background-color: #f25f5c;
+    background-color: #f25f5c; /* Dark pink */
     font-family: "Fredoka One", cursive;
     color: white;
     padding: 6px 5px;
@@ -29,9 +29,9 @@ fa-google {
 }
 
 .googlebutton:hover {
-    color: #f25f5c;
+    color: #f25f5c; /* Dark pink */
     background-color: white;
-    border: 3px solid #f25f5c;
+    border: 3px solid #f25f5c; /* Dark pink */
 }
 
 .img-block {
@@ -66,7 +66,7 @@ fa-google {
     left: 32%;
     border-radius: 50px;
     font-size: 2.5rem;
-    background-color: #ffdab9;
+    background-color: #ffdab9; /* Light yellow */
     width: 35%;
 }
 
@@ -109,7 +109,7 @@ label {
 }
 
 .signupbutton:hover {
-    background-color: #ffdab9;
+    background-color: #ffdab9; /* Light yellow */
     color: black;
     border: 3px solid black;
 }

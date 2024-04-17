@@ -1,7 +1,7 @@
 .genre-head {
     font-family: "Lobster", cursive;
     font-size: 300%;
-    background-color: #d7722c;
+    background-color: #d7722c; /* Dark pink */
     margin-top: 0px;
     color: white;
 }
@@ -29,7 +29,7 @@
     padding-left: 220px;
     font-family: "Sora", sans-serif;
     font-size: 1.2rem;
-    color: #d7722c;
+    color: #d7722c; /* Dark pink */
 }
 
 #author_name {
@@ -37,7 +37,7 @@
     font-family: "Rockwell", serif;
     color: black;
     font-weight: bold;
-    font-size: 1 rem;
+    font-size: 1rem;
     padding-bottom: 25px;
     padding-top: 9px;
 }
@@ -68,7 +68,7 @@
 .more-details {
     margin-left: 40%;
     text-align: center;
-    background-color: #3d348b;
+    background-color: #3d348b; /* Dark blue */
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
@@ -77,16 +77,16 @@
 }
 
 .more-details:hover {
-    color: #3d348b;
+    color: #3d348b; /* Dark blue */
     background: white;
-    border: 2px solid #3d348b;
+    border: 2px solid #3d348b; /* Dark blue */
     text-shadow: 1px 1px 3px #727ff0;
 }
 
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #31c2cf; /* Light blue */
     font-weight: 600;
     font-size: 1rem;
     border-radius: 20px;
@@ -104,16 +104,16 @@
 
 .link {
     background-color: white;
-    color: #d7722c;
+    color: #d7722c; /* Dark pink */
 }
 
 .link:hover {
-    color: #d7722c;
-    background-color: #e5e4e2;
+    color: #d7722c; /* Dark pink */
+    background-color: #e5e4e2; /* Light yellow */
 }
 
 .des {
-    background-color: #d7722c;
+    background-color: #d7722c; /* Dark pink */
     color: white;
 }
 
