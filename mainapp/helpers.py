@@ -12,14 +12,20 @@ import mainapp.models
 book_path = os.path.join(settings.STATICFILES_DIRS[0] + "/mainapp/dataset/books.csv")
 
 # For Count Vectorizer
+# This file stores a precomputed cosine similarity matrix, likely used for content-based recommendations.
 cosine_sim_path = os.path.join(
     settings.STATICFILES_DIRS[0] + "/mainapp/model_files/tf-idf/cosine_rating_sim.npz"
 )
+
+# This file stores the indices of the books, which map each book title to a row or column in the similarity matrix.
 book_indices_path = os.path.join(
     settings.STATICFILES_DIRS[0] + "/mainapp/model_files/tf-idf/indices.pkl"
 )
 
 # For Embedding
+
+# These files store mappings between book IDs. book_raw_to_inner_id.pickle maps raw IDs to internal IDs,
+# and book_inner_id_to_raw.pickle does the opposite.
 book_id_map_path = os.path.join(
     settings.STATICFILES_DIRS[0]
     + "/mainapp/model_files/surprise/book_raw_to_inner_id.pickle"
@@ -28,6 +34,8 @@ book_raw_map_path = os.path.join(
     settings.STATICFILES_DIRS[0]
     + "/mainapp/model_files/surprise/book_inner_id_to_raw.pickle"
 )
+
+# Contains embeddings (vector representations) of books, stored as a NumPy array (.npy).
 book_embed_path = os.path.join(
     settings.STATICFILES_DIRS[0] + "/mainapp/model_files/surprise/book_embedding.npy"
 )
@@ -35,6 +43,7 @@ sim_books_path = os.path.join(
     settings.STATICFILES_DIRS[0] + "/mainapp/model_files/surprise/sim_books.pickle"
 )
 
+# The code then opens and loads these files using pickle and np.load.
 with open(book_id_map_path, "rb") as handle:
     book_raw_to_inner_id = pickle.load(handle)
 
@@ -45,6 +54,7 @@ book_embedding = np.load(book_embed_path)
 with open(sim_books_path, "rb") as handle:
     sim_books_dict = pickle.load(handle)
 
+# The pandas library is used to load the dataset into a DataFrame.
 cols = ["original_title", "authors", "average_rating", "image_url", "book_id"]
 
 df_book = pd.read_csv(book_path)
@@ -189,7 +199,7 @@ def get_bookid(raw_id_list):
     bookid_list = list(df_book[df_book.r_index.isin(raw_id_list)]["book_id"].values)
     return bookid_list
 
-
+# Filters the books of a specified genre and ranks them based on a weighted rating.
 def genre_wise(genre, percentile=0.85):
     """Return top genre books according to a cutoff percentile.
 
@@ -222,7 +232,7 @@ def genre_wise(genre, percentile=0.85):
 
     return qualified[cols].head(min_genre_book_count).sample(n_books)
 
-
+# Returns recommendations based on cosine similarity of TF-IDF vectors.
 def tfidf_recommendations(bookid):
     """Return recommenedations based on count vectorizer.
 
@@ -252,7 +262,7 @@ def tfidf_recommendations(bookid):
     bookid_list = get_book_ids(book_indices)
     return bookid_list
 
-
+# Provides recommendations based on user embeddings.
 def embedding_recommendations(sorted_user_ratings):
     """Return recommended book ids based on embeddings.
 
@@ -291,7 +301,7 @@ def embedding_recommendations(sorted_user_ratings):
 
     return similar_bookid_list
 
-
+# Fetches book details for a given list of book IDs from df_book.
 def get_book_dict(bookid_list):
     """Return book details based on provided bookids.
 
@@ -311,7 +321,7 @@ def get_book_dict(bookid_list):
     )
     return rec_books_dict
 
-
+# Combines recommendations from TF-IDF and embedding-based models, returning a mixture of both types.
 def combine_ids(tfidf_bookids, embedding_bookids, already_rated, recommendations=9):
     """Return best bookids combining both approaches.
 
@@ -367,7 +377,7 @@ def combine_ids(tfidf_bookids, embedding_bookids, already_rated, recommendations
         best_bookids = best_bookids + best_bookids_tfidf + genre_recomm_bookids
     return best_bookids
 
-
+# Finds the most common genre among a given list of books and recommends additional books from that genre.
 def most_common_genre_recommendations(books, n):
     """Returns n top rated of the most_common_genre among all lists taken as input
 
@@ -399,7 +409,7 @@ def most_common_genre_recommendations(books, n):
 
     return genre_recommendations
 
-
+# Returns a sample of the top N books based on their weighted ratings.
 def get_top_n(top_n=400):
     """Return a sample of top N books based on weighted average ratings.
 
@@ -426,7 +436,7 @@ def get_top_n(top_n=400):
     ].head(top_n)
     return qualified.sample(top_n)
 
-
+# Provides the top N popular books among users with ratings of 4 and above.
 def popular_among_users(N=15):
     """Return Popular Books Among Users in the rating range 4-5.
 

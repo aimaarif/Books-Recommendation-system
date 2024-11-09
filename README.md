@@ -1,0 +1,4 @@
+.venv/scripts/activate
+python manage.py runserver
+
+Developed a Book Recommendation System using the **GoodBooks-10k dataset**, leveraging machine learning techniques such as **FunkSVD** and **Term Frequency** to provide personalized book suggestions based on user ratings. The system preprocesses data to clean missing values and duplicates, while also using collaborative filtering and content-based methods to recommend books by similar authors or genres. Key features include dynamic book suggestions, user-friendly interface with AJAX integration, and scalable backend built with **Django**. Future improvements involve adding popular books, model optimization, and advanced recommendation algorithms.

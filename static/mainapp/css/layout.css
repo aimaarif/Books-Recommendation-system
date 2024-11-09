@@ -8,11 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-#navbarNav {
-    float: right;
-}
-
-
 /* Custom Scrollbar */
 
 body::-webkit-scrollbar {
@@ -38,24 +33,7 @@ body {
     scrollbar-width: thin;
 }
 
-
 /* nav bar css */
-
-.nav-item {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    font-family: 'Lato', sans-serif;
-}
-
-.navbrandimg {
-    width: 94px;
-}
-
-.navbar-toggler {
-    border-color: black;
-    background-color: white;
-}
 
 .img-book {
     height: 200px !important;
@@ -95,8 +73,8 @@ body {
 }
 
 #searchdropdown {
-    margin-left: 50%;
-    width: 260px;
+    margin-left: 30%;
+    width: 460px;
 }
 
 #searchdropdown #bookName {
@@ -112,7 +90,7 @@ body {
     background-color: #f1f1f1;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 1040;
     border-radius: 10px;
     max-width: 260.33px;
 }
@@ -192,7 +170,7 @@ strong {
 }
 
 footer {
-    background-color: rgb(39, 126, 255);
+    background-color: #e70e4f;
     color: white;
     margin-top: 10%;
     text-align: center;
@@ -206,7 +184,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #4b57fa;
+    color: #d6104b;
     text-decoration: none;
 }
 
@@ -217,28 +195,20 @@ footer a:hover {
 
 /* media query */
 
+
 @media screen and (max-width: 768px) and (min-width: 600px) {
+    #searchdropdown { 
+        margin: auto !important;
+        margin-left: 33% !important;
+    }
     #searchdropdown #bookName {
         position: relative;
-        top: 0px;
         right: 75px;
-        margin: 10px;
-    }
-    .navbar-light .navbar-toggler {
-        position: absolute;
-        right: 1rem;
-        top: 1.4rem;
-    }
-    .navbrandimg {
-        position: absolute;
-        top: 15px;
-    }
-    .nav-icon-s {
-        display: none;
-    }
-    li.nav-item {
-        margin-top: -25px;
-        margin-bottom: 15px;
+        /* margin: 10px; */
+        color: orangered;
+        color: yellow;
+        color: rgb(38, 155, 175);
+        background: #e70e4f;
     }
 }
 
@@ -247,29 +217,10 @@ footer a:hover {
         margin-left: 8%;
         padding-left: 0%;
         width: 200px;
-    }
-    .navbar-brand {
-        width: 8px;
-        margin-right: 28px;
-        padding-left: 0;
-    }
-    .navbrandimg {
-        width: 65px;
-        padding-right: 5px;
+        margin: auto !important;
     }
     .img-book {
         height: 140px !important;
-    }
-    .nav-icon-s {
-        display: none;
-    }
-    .nav-link {
-        margin-top: -2px;
-        margin-top: -25px;
-    }
-    .nav-link:hover {
-        text-decoration: underline;
-        font-weight: 100;
     }
     body::-webkit-scrollbar {
         width: 5px;
@@ -288,7 +239,7 @@ body {
     z-index: 100;
     border: 0.1rem solid white;
     outline: none;
-    background-color: black;
+    background-color: #f88635;
     color: white;
     cursor: pointer;
     padding: 0.2rem 0.8rem 0.2rem 0.8rem;

@@ -135,12 +135,12 @@
 .heading-genre {
     padding: 30px 30px;
     font-size: 47px;
-    color: #4169e1; /* Blue */
+    color: #e70e4f ;
 }
 
 .genre-container,
 .top-books {
-    background-color: #1a84fd; 
+    background-color: #f5c71b; 
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -173,7 +173,7 @@ ol.carousel-indicators li {
     height: 7px;
     border: none;
     border-radius: 10px;
-    background-color: #ffd700; /* Yellow */
+    background-color: #e70e4f; /* Yellow */
     opacity: 0.6;
     margin: 0 5px;
 }
@@ -201,7 +201,7 @@ ol.carousel-indicators li.active {
     height: 50px;
     top: 50%;
     border-radius: 50%;
-    background-color: #ffd700; /* Yellow */
+    background-color: #e70e4f; 
 }
 
 @media screen and (min-width: 992px) {
@@ -244,7 +244,7 @@ ol.carousel-indicators li.active {
 .card-title {
     font-family: "Sora", sans-serif;
     font-size: x-large;
-    color: #ffd700; /* Yellow */
+    color: #e70e4f; /* Yellow */
 }
 
 .card-img:hover {
@@ -297,7 +297,7 @@ ol.carousel-indicators li.active {
 
 .more-details {
     text-align: center;
-    background-color: #3d348b; /* Dark pink */
+    background-color: #e70e4f; 
     color: #fff;
     font-weight: 600;
     font-size: 14px;
@@ -308,16 +308,16 @@ ol.carousel-indicators li.active {
 }
 
 .more-details:hover {
-    color: #3d348b; /* Dark pink */
+    color: #e70e4f; /* Dark pink */
     background: white;
-    border: 2px solid #3d348b; /* Dark pink */
-    text-shadow: 1px 1px 3px #727ff0;
+    border: 2px solid #f50f54; /* Dark pink */
+    text-shadow: 1px 1px 3px #dd4c77;
 }
 
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf; /* Light blue */
+    background-color: #e70e4f; /* Light blue */
     font-weight: 600;
     font-size: 14px;
     border-radius: 20px;
@@ -403,6 +403,6 @@ ol.carousel-indicators li.active {
     }
 }
 .Extras{
-    background-color: #1a84fd;
+    background-color: #f5c71b;
     padding-top: 2em;
 }

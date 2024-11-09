@@ -29,7 +29,7 @@
     padding-left: 220px;
     font-family: "Sora", sans-serif;
     font-size: 1.2rem;
-    color: #d7722c; /* Dark pink */
+    color: #e70e4f; 
 }
 
 #author_name {
@@ -68,7 +68,7 @@
 .more-details {
     margin-left: 40%;
     text-align: center;
-    background-color: #3d348b; /* Dark blue */
+    background-color: #e70e4f; /* Dark blue */
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
@@ -77,16 +77,16 @@
 }
 
 .more-details:hover {
-    color: #3d348b; /* Dark blue */
+    color: #e70e4f; /* Dark blue */
     background: white;
-    border: 2px solid #3d348b; /* Dark blue */
-    text-shadow: 1px 1px 3px #727ff0;
+    border: 2px solid #d80645; /* Dark blue */
+    text-shadow: 1px 1px 3px #dd4674;
 }
 
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf; /* Light blue */
+    background-color: #e70e4f; /* Light blue */
     font-weight: 600;
     font-size: 1rem;
     border-radius: 20px;
@@ -104,16 +104,16 @@
 
 .link {
     background-color: white;
-    color: #d7722c; /* Dark pink */
+    color: #e70e4f; 
 }
 
 .link:hover {
-    color: #d7722c; /* Dark pink */
-    background-color: #e5e4e2; /* Light yellow */
+    color: #e70e4f; 
+    background-color: #e5e4e2; 
 }
 
 .des {
-    background-color: #d7722c; /* Dark pink */
+    background-color: #d7722c; 
     color: white;
 }
 

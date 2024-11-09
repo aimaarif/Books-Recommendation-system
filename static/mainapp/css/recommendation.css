@@ -23,7 +23,7 @@
     padding: 25px;
     width: 33.33%;
     height: 250px;
-    background-color: #133050; /* Dark blue */
+    background-color: #fff;
 }
 
 .book-photo {
@@ -48,7 +48,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #ffffff;
+    color: #e70e4f;
     font-weight: 600;
     font-size: larger;
 }
@@ -63,12 +63,12 @@
 
 .book-content {
     padding: 0 20px;
-    color: #ffffff;
+    color: #e70e4f;
     overflow: hidden;
 }
 
 .book-voters {
-    color: #fff;
+    color: #e70e4f;
     vertical-align: sub;
     font-size: 18px;
     margin-left: 7px;
@@ -79,7 +79,7 @@
 .book-see {
     margin-top: 10px;
     text-align: center;
-    background-color: #fff; /* Light yellow */
+    background-color: #f5c71b; /* Light yellow */
     color: #d7722c; /* Dark pink */
     font-weight: 600;
     padding: 8px;
@@ -135,7 +135,7 @@
 
 .more-details {
     text-align: center;
-    background-color: #3d348b; /* Dark blue */
+    background-color: #e70e4f; /* Dark blue */
     color: #fff;
     font-weight: 600;
     font-size: 15px;
@@ -148,15 +148,15 @@
 }
 
 .more-details:hover {
-    color: #3d348b; /* Dark blue */
+    color: #e70e4f; 
     background: white;
-    border: 2px solid #3d348b; /* Dark blue */
-    text-shadow: 1px 1px 3px #727ff0;
+    border: 2px solid #dd0042; 
+    text-shadow: 1px 1px 3px #f0497b;
 }
 
 .rating-block {
     text-align: center;
-    background-color: #31c2cf; /* Light blue */
+    background-color: #e70e4f; 
     font-weight: 600;
     font-size: 15px;
     border-radius: 20px;

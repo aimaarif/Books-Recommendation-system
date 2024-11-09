@@ -2,7 +2,7 @@
 .topbook-head {
     font-family: "Lobster", cursive;
     font-size: 300%;
-    background-color: #bdcdff; /* Blue */
+    background-color: #d7722c; /* Blue */
     margin-top: 0px;
     color: white;
 }
@@ -42,7 +42,7 @@
 .card-title {
     font-family: "Sora", sans-serif;
     font-size: large;
-    color: #d7722c; /* Dark pink */
+    color: #e70e4f; /* Dark pink */
 }
 
 .card-text {
@@ -83,8 +83,8 @@
 
 .more-details {
     text-align: center;
-    background-color: #ffee8c; /* Yellow */
-    color: #3d348b; /* Dark pink */
+    background-color: #e70e4f; /* Yellow */
+    color: #fff; /* Dark pink */
     font-weight: 600;
     font-size: 11px;
     border-radius: 20px;
@@ -94,16 +94,16 @@
 }
 
 .more-details:hover {
-    color: #3d348b; /* Dark pink */
-    background: white;
-    border: 2px solid #3d348b; /* Dark pink */
-    text-shadow: 1px 1px 3px #727ff0;
+    color: #fff; /* Dark pink */
+    background: #ca0d46;
+    border: 2px solid #e70e4f; /* Dark pink */
+    text-shadow: 1px 1px 3px #d33564;
 }
 
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf; /* Light blue */
+    background-color: #e70e4f; /* Light blue */
     font-weight: 600;
     font-size: 11px;
     border-radius: 20px;

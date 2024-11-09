@@ -22,12 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
+# SECRET_KEY is fetched from environment variables for security. 
+# If it's not available, a default ("RANDOM_KEY") is provided (only for development).
 SECRET_KEY = os.environ.get("SECRET_KEY", "RANDOM_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = str(os.environ.get("DEBUG", True)) == "True"
 
 # Check if production environment
+
+# PROD_ENV is used to switch between production and development settings, like database configurations.
 PROD_ENV = str(os.environ.get("PROD_ENV", False)) == "True"
 
 ALLOWED_HOSTS = [
@@ -102,6 +107,9 @@ WSGI_APPLICATION = "BookRecSystem.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+
+# DATABASES is set up to switch between PostgreSQL for production (PROD_ENV=True)
+# and SQLite for local development (PROD_ENV=False).
 if PROD_ENV:
     DATABASES = {
         "default": {
@@ -162,6 +170,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 # other folders to look for static files
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+# STATICFILES_STORAGE is set to WhiteNoise storage, which optimizes static file handling in production.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Deployment

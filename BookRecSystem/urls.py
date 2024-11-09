@@ -24,5 +24,6 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # error handler
+# These views are defined in mainapp.views as handler404 and handler500.
 handler404 = "mainapp.views.handler404"
 handler500 = "mainapp.views.handler500"
